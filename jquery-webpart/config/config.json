@@ -1,0 +1,21 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "jquery-accordian-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/jqueryAccordian/JqueryAccordianWebPart.js",
+          "manifest": "./src/webparts/jqueryAccordian/JqueryAccordianWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": "node_modules/jquery/dist/jquery.min.js",
+    "jqueryui": "node_modules/jqueryui/dist/jquery-ui.min.js"
+  },
+  "localizedResources": {
+    "JqueryAccordianWebPartStrings": "lib/webparts/jqueryAccordian/loc/{locale}.js"
+  }
+}
